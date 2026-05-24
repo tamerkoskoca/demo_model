@@ -116,219 +116,775 @@
 
     <!-- Direkler-->
     <!--D=0,2 m L=3m-->
+
+    <model name="pole_0">
+      <static>true</static>
+      <pose>59.8 -5.8 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_1">
+      <static>true</static>
+      <pose>66.7 8.6 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_2">
+      <static>true</static>
+      <pose>113.9 -31.7 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_3">
+      <static>true</static>
+      <pose>120.8 -17.3 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_4">
+      <static>true</static>
+      <pose>157.0 -41.7 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_5">
+      <static>true</static>
+      <pose>169.8 -51.2 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_6">
+      <static>true</static>
+      <pose>121.2 -89.8 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_7">
+      <static>true</static>
+      <pose>134.0 -99.4 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_8">
+      <static>true</static>
+      <pose>116.1 -101.7 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_9">
+      <static>true</static>
+      <pose>116.7 -117.7 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_10">
+      <static>true</static>
+      <pose>56.1 -104.0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
     <model name="pole_11">
       <static>true</static>
-      <pose>-50 -15 0 0 0 0</pose>
-      <link name="link_11">
-        <visual name="seg_alt">
-          <pose>0 0 0.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-          <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
-        </visual>
-        <collision name="seg_alt_col">
-          <pose>0 0 0.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-        </collision>
-
-        <visual name="seg_orta">
-          <pose>0 0 1.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
+      <pose>56.7 -119.9 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
           <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
         </visual>
-        <collision name="seg_orta_col">
-          <pose>0 0 1.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-        </collision>
-
-        <visual name="seg_ust">
-          <pose>0 0 2.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-          <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
-        </visual>
-        <collision name="seg_ust_col">
-          <pose>0 0 2.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-        </collision>
       </link>
     </model>
-
     <model name="pole_12">
       <static>true</static>
-      <pose>-50 -18 0 0 0 0</pose>
-      <link name="link_12">
-        <visual name="seg_alt">
-          <pose>0 0 0.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-          <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
-        </visual>
-        <collision name="seg_alt_col">
-          <pose>0 0 0.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-        </collision>
-
-        <visual name="seg_orta">
-          <pose>0 0 1.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
+      <pose>-3.8 -106.2 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
           <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
         </visual>
-        <collision name="seg_orta_col">
-          <pose>0 0 1.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-        </collision>
-
-        <visual name="seg_ust">
-          <pose>0 0 2.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-          <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
-        </visual>
-        <collision name="seg_ust_col">
-          <pose>0 0 2.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-        </collision>
       </link>
     </model>
-
+    <model name="pole_13">
+      <static>true</static>
+      <pose>-3.2 -122.2 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_14">
+      <static>true</static>
+      <pose>-63.8 -108.5 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_15">
+      <static>true</static>
+      <pose>-63.2 -124.5 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_16">
+      <static>true</static>
+      <pose>-123.7 -110.7 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_17">
+      <static>true</static>
+      <pose>-123.1 -126.7 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_18">
+      <static>true</static>
+      <pose>-134.6 -113.2 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_19">
+      <static>true</static>
+      <pose>-144.9 -125.5 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_20">
+      <static>true</static>
+      <pose>-180.5 -74.6 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
     <model name="pole_21">
       <static>true</static>
-      <pose>0 -18 0 0 0 0</pose>
-      <link name="link_21">
-        <visual name="seg_alt">
-          <pose>0 0 0.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-          <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
-        </visual>
-        <collision name="seg_alt_col">
-          <pose>0 0 0.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-        </collision>
-
-        <visual name="seg_orta">
-          <pose>0 0 1.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
+      <pose>-190.8 -86.9 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
           <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
         </visual>
-        <collision name="seg_orta_col">
-          <pose>0 0 1.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-        </collision>
-
-        <visual name="seg_ust">
-          <pose>0 0 2.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-          <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
-        </visual>
-        <collision name="seg_ust_col">
-          <pose>0 0 2.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-        </collision>
       </link>
     </model>
-
     <model name="pole_22">
       <static>true</static>
-      <pose>0 -21 0 0 0 0</pose>
-      <link name="link_22">
-        <visual name="seg_alt">
-          <pose>0 0 0.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-          <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
-        </visual>
-        <collision name="seg_alt_col">
-          <pose>0 0 0.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-        </collision>
-
-        <visual name="seg_orta">
-          <pose>0 0 1.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
+      <pose>-226.5 -36.0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
           <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
         </visual>
-        <collision name="seg_orta_col">
-          <pose>0 0 1.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-        </collision>
-
-        <visual name="seg_ust">
-          <pose>0 0 2.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-          <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
-        </visual>
-        <collision name="seg_ust_col">
-          <pose>0 0 2.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-        </collision>
       </link>
     </model>
-
+    <model name="pole_23">
+      <static>true</static>
+      <pose>-236.8 -48.3 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_24">
+      <static>true</static>
+      <pose>-267.6 -20.1 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_25">
+      <static>true</static>
+      <pose>-267.2 -4.1 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_26">
+      <static>true</static>
+      <pose>-207.6 -21.3 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_27">
+      <static>true</static>
+      <pose>-207.3 -5.3 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_28">
+      <static>true</static>
+      <pose>-147.6 -22.5 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_29">
+      <static>true</static>
+      <pose>-147.3 -6.5 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_30">
+      <static>true</static>
+      <pose>-87.6 -23.7 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
     <model name="pole_31">
       <static>true</static>
-      <pose>50 -15 0 0 0 0</pose>
-      <link name="link_31">
-        <visual name="seg_alt">
-          <pose>0 0 0.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-          <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
-        </visual>
-        <collision name="seg_alt_col">
-          <pose>0 0 0.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-        </collision>
-
-        <visual name="seg_orta">
-          <pose>0 0 1.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
+      <pose>-87.3 -7.7 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
           <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
         </visual>
-        <collision name="seg_orta_col">
-          <pose>0 0 1.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-        </collision>
-
-        <visual name="seg_ust">
-          <pose>0 0 2.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-          <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
-        </visual>
-        <collision name="seg_ust_col">
-          <pose>0 0 2.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-        </collision>
       </link>
     </model>
-
     <model name="pole_32">
       <static>true</static>
-      <pose>50 -18 0 0 0 0</pose>
-      <link name="link_32">
-        <visual name="seg_alt">
-          <pose>0 0 0.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-          <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
-        </visual>
-        <collision name="seg_alt_col">
-          <pose>0 0 0.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-        </collision>
-
-        <visual name="seg_orta">
-          <pose>0 0 1.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
+      <pose>-50.5 -24.5 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
           <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
         </visual>
-        <collision name="seg_orta_col">
-          <pose>0 0 1.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-        </collision>
-
-        <visual name="seg_ust">
-          <pose>0 0 2.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-          <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </link>
+    </model>
+    <model name="pole_33">
+      <static>true</static>
+      <pose>-49.5 -8.5 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
         </visual>
-        <collision name="seg_ust_col">
-          <pose>0 0 2.5 0 0 0</pose>
-          <geometry><cylinder><radius>0.10</radius><length>1.0</length></cylinder></geometry>
-        </collision>
+      </link>
+    </model>
+    <model name="pole_34">
+      <static>true</static>
+      <pose>-0.5 -27.5 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_35">
+      <static>true</static>
+      <pose>0.5 -11.5 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_36">
+      <static>true</static>
+      <pose>50.5 -24.5 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_37">
+      <static>true</static>
+      <pose>49.5 -8.5 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_38">
+      <static>true</static>
+      <pose>110.4 -20.6 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_39">
+      <static>true</static>
+      <pose>109.4 -4.7 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_40">
+      <static>true</static>
+      <pose>159.3 -6.4 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_41">
+      <static>true</static>
+      <pose>174.5 -11.6 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_42">
+      <static>true</static>
+      <pose>139.7 -63.1 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_43">
+      <static>true</static>
+      <pose>154.8 -68.3 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_44">
+      <static>true</static>
+      <pose>120.1 -119.8 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_45">
+      <static>true</static>
+      <pose>135.2 -125.0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_46">
+      <static>true</static>
+      <pose>115.9 -146.6 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_47">
+      <static>true</static>
+      <pose>117.1 -162.5 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_48">
+      <static>true</static>
+      <pose>56.1 -151.0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_49">
+      <static>true</static>
+      <pose>57.2 -167.0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_50">
+      <static>true</static>
+      <pose>-3.8 -155.5 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_51">
+      <static>true</static>
+      <pose>-2.6 -171.4 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_52">
+      <static>true</static>
+      <pose>-63.6 -159.9 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_53">
+      <static>true</static>
+      <pose>-62.4 -175.9 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_54">
+      <static>true</static>
+      <pose>-88.7 -163.1 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_55">
+      <static>true</static>
+      <pose>-96.4 -177.1 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_56">
+      <static>true</static>
+      <pose>-141.3 -134.2 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_57">
+      <static>true</static>
+      <pose>-149.0 -148.2 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_58">
+      <static>true</static>
+      <pose>-193.9 -105.3 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_59">
+      <static>true</static>
+      <pose>-201.6 -119.3 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_60">
+      <static>true</static>
+      <pose>-207.8 -100.2 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_61">
+      <static>true</static>
+      <pose>-223.0 -105.1 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_62">
+      <static>true</static>
+      <pose>-226.4 -43.1 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_63">
+      <static>true</static>
+      <pose>-241.6 -48.1 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_64">
+      <static>true</static>
+      <pose>-240.7 -29.9 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_65">
+      <static>true</static>
+      <pose>-242.8 -14.0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_66">
+      <static>true</static>
+      <pose>-181.2 -21.8 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_67">
+      <static>true</static>
+      <pose>-183.4 -5.9 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_68">
+      <static>true</static>
+      <pose>-121.8 -13.7 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="pole_69">
+      <static>true</static>
+      <pose>-123.9 2.1 0 0 0 0</pose>
+      <link name="link">
+        <visual name="v">
+          <pose>0 0 16.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.15</radius><length>33.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
       </link>
     </model>
   </world>

@@ -33,7 +33,7 @@ if [[ ! -d "$PX4_DIR" ]]; then
   echo "[activate] WARN: PX4_DIR bulunamadı: $PX4_DIR"
 fi
 export PATH="$PATH:$PX4_DIR/Micro-XRCE-DDS-Agent/build"
-export GZ_SIM_RESOURCE_PATH="$REPO_ROOT/src/burkut_worlds/worlds:$REPO_ROOT/src/burkut_worlds/models:$PX4_DIR/Tools/simulation/gz/models:$PX4_DIR/Tools/simulation/gz/worlds:${GZ_SIM_RESOURCE_PATH:-}"
+export GZ_SIM_RESOURCE_PATH="$REPO_ROOT/src/burkut_worlds/worlds:$REPO_ROOT/src/burkut_worlds/models:$REPO_ROOT/src/burkut_description/models:$PX4_DIR/Tools/simulation/gz/models:$PX4_DIR/Tools/simulation/gz/worlds:${GZ_SIM_RESOURCE_PATH:-}"
 # NVIDIA PRIME: Gazebo'nun NVIDIA GPU'yu kullanması için
 export __NV_PRIME_RENDER_OFFLOAD=1
 export __NV_PRIME_RENDER_OFFLOAD_PROVIDER=NVIDIA-G0

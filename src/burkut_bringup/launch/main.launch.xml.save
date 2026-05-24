@@ -23,13 +23,11 @@
               value="$(find-pkg-share burkut_worlds)/worlds"/>
   <append_env name="GZ_SIM_RESOURCE_PATH"
               value="$(find-pkg-share burkut_description)/models"/>
-  <append_env name="GZ_SIM_RESOURCE_PATH"
-              value="/home/bugra/PX4-Autopilot/Tools/simulation/gz/models"/>
 
   <!-- ===== 1. Gazebo Harmonic ===== -->
   <include file="$(find-pkg-share ros_gz_sim)/launch/gz_sim.launch.py">
     <arg name="gz_args"
-         value="-r  $(find-pkg-share burkut_worlds)/worlds/$(var world).sdf"/>
+         value="-r $(find-pkg-share burkut_worlds)/worlds/$(var world).sdf"/>
   </include>
 
   <!-- ===== 2. Advanced Plane spawn ===== -->
@@ -50,7 +48,7 @@
         output="screen"
         args="/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock">
   </node>
-  <!-- ===== 4. Camera Bridge ===== -->
+<!-- ROS2 <=> Gazebo Bridge -->
   <node pkg="ros_gz_bridge"
         exec="parameter_bridge"
         name="bridge_camera"
@@ -59,21 +57,28 @@
               /camera/camera_info@sensor_msgs/msg/CameraInfo[gz.msgs.CameraInfo">
   </node>
 
-  <!-- ===== 5. LiDAR 2D Bridge ===== -->
+
   <node pkg="ros_gz_bridge"
         exec="parameter_bridge"
-        name="bridge_lidar"
+        name="args="/world/test/model/advanced_plane/link/link/sensor/lidar_2d_v2/scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan">bridge_lidar"
         output="screen"
         args="/lidar/scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan">
   </node>
 
-  <!-- ===== 6. TF Bridge (dynamic: model pose → /tf) ===== -->
-  <node pkg="ros_gz_bridge"
-        exec="parameter_bridge"
-        name="bridge_tf"
-        output="screen"
-        args="/model/advanced_plane/pose@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V">
-    <remap from="/model/advanced_plane/pose" to="/tf"/>
-  </node>
+<node pkg="ros_gz_bridge" exec="parameter_bridge" name="bridge_tf" output="screen"
+            args="/models/lidar_2d/pose@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V">
+        <remap from="/models/lidar_2d/pose" to="/tf"/>
+    </node>
 
+    <!-- Tf bağıntıları -->
+    <node pkg="tf2_ros" exec="static_transform_publisher" name="tf_lidar"       
+      args="0.18 0 0.04 0 0 0 base_link lidar_2d_link --ros-args -p use_sim_time:=true"
+      output="screen">
+    </node>
+
+    <!-- base_link lidar_2d static tf bağlantısı-->
+    <node pkg="tf2_ros" exec="static_transform_publisher" name="tf_base_to_model"
+      args="0 0 0 0 0 0 base_link lidar_2d --ros-args -p use_sim_time:=true"
+      output="screen">
+    </node>
 </launch>

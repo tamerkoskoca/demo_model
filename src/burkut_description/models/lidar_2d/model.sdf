@@ -48,12 +48,12 @@
         </geometry>
       </collision>
       
-      <sensor name="lidar_2d" type="lidar">
+      <sensor name="lidar_2d" type="gpu_lidar">
         <pose>0 0 0.0169 0 0 0</pose>
         <topic>/lidar/scan</topic>
         <update_rate>50</update_rate>
 
-        <ray>
+        <lidar>
           <scan>
             <horizontal>
               <samples>320</samples>
@@ -72,7 +72,7 @@
             <mean>0.0</mean>
             <stddev>0.01</stddev>
           </noise>
-        </ray>
+        </lidar>
         <always_on>1</always_on>
         <visualize>true</visualize>
       </sensor>
