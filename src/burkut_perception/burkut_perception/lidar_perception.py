@@ -3,7 +3,7 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
 from std_msgs.msg import Header, String
-from burkut_msgs.msg import Obstacle, ObstacleArray
+from burkut_msgs.msg import Obstacle, ObstacleArray, GapResult
 from visualization_msgs.msg import Marker, MarkerArray
 from geometry_msgs.msg import Point
 import math
@@ -29,6 +29,7 @@ class LidarPerceptionNode(Node):
         self.sub_scan    = self.create_subscription(LaserScan, '/lidar/scan', self.scan_callback, 10)
         self.pub_poles   = self.create_publisher(ObstacleArray, '/lidar/poles', 10)
         self.pub_gap     = self.create_publisher(String, '/perception/gap_result', 10)
+        self.pub_gap_msg  = self.create_publisher(GapResult, '/perception/gap', 10)
         self.pub_markers = self.create_publisher(MarkerArray, '/lidar/markers', 10)
 
         self.get_logger().info('LiDAR Perception Node baslatildi.')
@@ -156,6 +157,15 @@ class LidarPerceptionNode(Node):
 
         gap_msg = String(); gap_msg.data = result
         self.pub_gap.publish(gap_msg)
+
+        gr = GapResult()
+        gr.header.stamp = now
+        gr.header.frame_id = frame
+        gr.gap_detected = best is not None
+        gr.width    = float(best['width'])    if best else 0.0
+        gr.distance = float(best['dist'])     if best else 0.0
+        gr.angle    = float(best['angle_deg']) if best else 0.0
+        self.pub_gap_msg.publish(gr)
         self.get_logger().info(result)
 
 

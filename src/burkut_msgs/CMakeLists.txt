@@ -13,6 +13,7 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Obstacle.msg"
+  "msg/GapResult.msg"
   "msg/ObstacleArray.msg"
   "msg/Waypoint.msg"
   "msg/WaypointArray.msg"
