@@ -26,6 +26,7 @@ setup(
         'console_scripts': [
             'pole_ai_test = burkut_perception.pole_ai_test:main',
             'lidar_perception = burkut_perception.lidar_perception:main',
+            'yolo_perception = burkut_perception.yolo_perception:main',
         ],
     },
 )
