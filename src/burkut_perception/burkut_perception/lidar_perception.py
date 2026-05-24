@@ -16,7 +16,7 @@ class LidarPerceptionNode(Node):
 
         self.declare_parameter('max_range', 30.0)
         self.declare_parameter('cluster_dist', 0.6)
-        self.declare_parameter('min_cluster_pts', 2)
+        self.declare_parameter('min_cluster_pts', 4)
         self.declare_parameter('min_gap', 1.5)
         self.declare_parameter('max_gap', 6.0)
 
