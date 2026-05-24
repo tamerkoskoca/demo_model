@@ -76,4 +76,13 @@
     <remap from="/model/advanced_plane/pose" to="/tf"/>
   </node>
 
+<!-- ===== RViz2 ===== -->
+  <node pkg="rviz2"
+        exec="rviz2"
+        name="rviz2"
+        output="screen"
+        args="-d $(find-pkg-share burkut_bringup)/config/perception.rviz">
+    <param name="use_sim_time" value="true"/>
+  </node>
+
 </launch>
